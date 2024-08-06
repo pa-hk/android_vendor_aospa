@@ -13,7 +13,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     AndroidAutoStub \
     talkback \
     PersonalSafety \
-    Turbo
+    Turbo \
+    GoogleCameraGo
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
