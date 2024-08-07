@@ -16,20 +16,15 @@ $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
+# Boot animation resolution.
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := aospa_ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := ginkgo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
 
-# Boot animation resolution.
-TARGET_BOOT_ANIMATION_RES := 1080
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="xiaomi/ginkgo/ginkgo:11/RKQ1.201004.002/V12.5.2.0.RCOMIXM:user/release-keys"
-
-BUILD_FINGERPRINT := xiaomi/ginkgo/ginkgo:11/RKQ1.201004.002/V12.5.2.0.RCOMIXM:user/release-keys
 
 endif
