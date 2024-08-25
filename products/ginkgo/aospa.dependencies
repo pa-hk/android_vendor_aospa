@@ -3,7 +3,7 @@
         "remote":       "github",
         "repository":   "pa-hk/device_xiaomi_ginkgo",
         "target_path":  "device/xiaomi/ginkgo",
-        "revision":     "uvite"
+        "revision":     "uvite1"
     },
     {
         "remote":       "github",
@@ -15,7 +15,7 @@
         "remote":       "github",
         "repository":   "pa-hk/vendor_xiaomi_ginkgo",
         "target_path":  "vendor/xiaomi/ginkgo",
-        "revision":     "uvite"
+        "revision":     "uvite1"
     },
     {
         "remote":       "github",
