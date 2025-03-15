@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifeq (aospa_ginkgo,$(TARGET_PRODUCT))
+ifeq (rvos_ginkgo,$(TARGET_PRODUCT))
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -16,10 +16,15 @@ $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
+# RvOS
+RVOS_MAINTAINER := Hirokixd
+RVOS_MAINTAINER_LINK := https://t.me/Hirokixd28
+WITH_GMS := true
+
+PRODUCT_NAME := rvos_ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := ginkgo
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aospa_ginkgo
 PRODUCT_MODEL := Redmi Note 8/8T
 
 # Boot animation resolution.
